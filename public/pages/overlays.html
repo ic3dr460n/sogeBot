@@ -465,6 +465,22 @@
           <div class="col" style="max-width: 50%">
             <input id="input_creditsSocialTwitch" class="form-control input-sm" type="text" />
           </div>
+          <div class="w-100"></div>
+          <div class="col" style="max-width: 50%">
+
+            <strong data-lang="overlay-credits-social-discord"></strong>
+          </div>
+          <div class="col" style="max-width: 50%">
+            <input id="input_creditsSocialDiscord" class="form-control input-sm" type="text" />
+          </div>
+          <div class="w-100"></div>
+          <div class="col" style="max-width: 50%">
+
+            <strong data-lang="overlay-credits-social-instagram"></strong>
+          </div>
+          <div class="col" style="max-width: 50%">
+            <input id="input_creditsSocialInstagram" class="form-control input-sm" type="text" />
+          </div>
         </div>
       </div>
 </div>
@@ -520,6 +536,8 @@
     $('#input_creditsSocialFacebook').val(data.creditsSocialFacebook)
     $('#input_creditsSocialTwitter').val(data.creditsSocialTwitter)
     $('#input_creditsSocialTwitch').val(data.creditsSocialTwitch)
+    $('#input_creditsSocialTwitch').val(data.creditsSocialDiscord)
+    $('#input_creditsSocialTwitch').val(data.creditsSocialInstagram)
 
     $('#creditsFollowersToggle').bootstrapToggle(options)
     $('#creditsFollowersToggle').bootstrapToggle(data.creditsFollowers ? 'on' : 'off')
