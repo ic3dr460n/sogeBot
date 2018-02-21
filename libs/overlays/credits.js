@@ -29,6 +29,8 @@ class Credits {
     global.configuration.register('creditsSocialFacebook', 'core.no-response', 'string', '')
     global.configuration.register('creditsSocialTwitter', 'core.no-response', 'string', '')
     global.configuration.register('creditsSocialTwitch', 'core.no-response', 'string', '')
+    global.configuration.register('creditsSocialDiscord', 'core.no-response', 'string', '')
+    global.configuration.register('creditsSocialInstagram', 'core.no-response', 'string', '')
   }
 
   sockets () {
@@ -49,7 +51,9 @@ class Credits {
         let socials = {
           facebook: global.configuration.getValue('creditsSocialFacebook'),
           twitter: global.configuration.getValue('creditsSocialTwitter'),
-          twitch: global.configuration.getValue('creditsSocialTwitch')
+          twitch: global.configuration.getValue('creditsSocialTwitch'),
+          discord: global.configuration.getValue('creditsSocialDiscord'),
+          instagram: global.configuration.getValue('creditsSocialInstagram')
         }
         let messages = {
           lastMessage: global.configuration.getValue('creditsLastMessage'),
